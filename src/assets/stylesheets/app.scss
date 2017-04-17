@@ -1,0 +1,156 @@
+
+// Override bootstrap variables
+@import "app/variables";
+
+@import "~simple-line-icons/scss/simple-line-icons";
+
+// Bootstrap
+@import "bootstrap/bootstrap";
+
+// Global definition of media queries
+@import "app/media-queries";
+// Utilities
+@import "app/utils-definitions";
+
+// Bootstrap reset
+@import "app/bootstrap-reset";
+
+// Typography
+@import "app/typo";
+
+
+// Layout
+@import "app/layout";
+@import "app/layout-extra";
+@import "app/layout-animation";
+@import "app/top-navbar";
+@import "app/sidebar";
+@import "app/offsidebar";
+
+// Components
+// Components
+@import "app/breadcrumbs";
+@import "app/button-extra";
+@import "app/placeholder";
+@import "app/panels";
+@import "app/progress-extra";
+@import "app/radial-bar";
+@import "app/user-block";
+@import "app/dropdown-extra";
+@import "app/row-extra";
+@import "app/half-float";
+@import "app/masonry-grid";
+@import "app/animate";
+@import "app/table-grid";
+@import "app/nestable";
+@import "app/widget";
+
+
+// Forms
+@import "app/form-elements";
+@import "app/form-validation";
+
+
+// Charts
+
+// Form elements
+
+
+// Tables
+
+// Utilities
+@import "app/utils";
+
+// Plugins
+
+//themes
+@import "themes/theme-h";
+
+.bg-login {
+  background: url("/static/img/login/blocks-prints-font.jpg") no-repeat fixed center;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+body {
+  font-size: 15px;
+}
+
+.wrapper .container {
+      margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.page-well {
+  margin-top: 20px;
+  border: 0;
+  @include box-shadow(0 0 15px rgba(0,0,0,0.04));
+}
+
+.topnavbar {
+  margin-bottom: 15px;
+}
+
+.panel {
+  margin-bottom: 6px;
+
+  .list-group .list-group-item:hover{
+    @include box-shadow(0 2px 2px rgba(0,0,0,0.4));
+  }
+}
+
+.space {
+  margin-left:10px;
+}
+
+.check {
+  border: 1px solid #ccc;
+  background: #eee;
+}
+
+.check:hover{
+  background: #fff;
+}
+
+.radio [type="radio"]:checked + span:after {
+    -webkit-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear;
+    transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear;
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: #f05050;
+    left: 4px;
+    top: 4px;
+    border-radius: 100%;
+    -ms-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+}
+
+.text-primary {
+    color: #2D2D2D;
+}
+
+.mb-sm, {
+  color: #2D2D2D;
+}
+
+.navbar-right {
+    margin-top: 18.500px;
+}
+
+.el-dropdown-link {
+    color: #fff;
+}
+
+.navbar-menu {
+  position: absolute;
+  top: 50px;
+  left: 1127px;
+  transform-origin: center top 0px;
+  z-index: 2000;
+}
